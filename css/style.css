@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+header,main,nav,footer,section,article {
+    display: block;
+}
+
+
+
+header,footer,nav {
+    width: 100%;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    height: 193px;
+    background-color: #808082;
+    padding-top: 0.1px;
+}
+
+#logo > a {
+    width: 90px;
+    height: 90px;
+    background: url("http://se.shenkar.ac.il/teach/web1/2021/logo.png") no-repeat center;
+    display: block;
+    margin: 50px auto;
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    background-color: #000;
+}
+
+li {
+    color: #fff;
+}
+
+footer {
+    height: 50px;
+    background-color: grey;
+
+}
+
+
+
+
+.layout_1  nav {
+    height: 63px;
+}
+
+.layout_1  nav  ul {
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.layout_1 li {
+    width: 233px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    padding-top: 10px;
+    margin-left: 39px;
+}
+
+.selected {
+    background-color: rgb(24, 169, 172);
+}
+
+
+.layout_1 ul li:hover {
+    color:#525352;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+}
+
+.layout_1 main {
+    width: 760px;
+    height: 760px;
+}
+
+
+
+.layout_1 main  section {
+    width: 279px;
+    height: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 39px;
+}
+
+section > div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-right: 35px;
+    margin-top: 37px;
+}
+
+
+.layout_1 .main_bottom  {
+    position: absolute;
+    bottom: 75px;
+    left: 462px;
+}
+
+.layout_1 aside {
+    position: relative;
+    background-color: rgb(241, 234, 234);
+    width: 240px;
+}
+
+
+.layout_1 aside > div {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    right: 15px;
+    top: 200px;
+}
+
+.layout_1 footer {
+    background-color: rgb(241, 234, 234);
+}
+
+.layout_2 header {
+    margin: 0px auto;
+}
+
+
+.layout_2 nav {
+    height: 757px;
+    width: 146px;
+    background-color: #000;
+}
+
+.layout_2 ul > li {
+    display: block;
+    margin-top: 20px;
+}
+
+.layout_2 li {
+    height: 38px;
+    padding-top: 12.78px;
+    padding-left: 6px;
+}
+
+
+
+.layout_2 ul li:hover {
+    color:#51a095;
+}
+
+.layout_2 aside {
+    height: 757px;
+    width: 257px;
+    background-color: grey;
+    position: relative;
+}
+
+.layout_2 aside  section {
+    width: 279px;
+    height: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    bottom: 52px;
+    left: 12.5px;
+}
+
+.layout_2 section  div {
+    background-color: seagreen;
+}
+
+.layout_2 main{
+    width: 597px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 760px;
+}
+
+.layout_2 main  div {
+    background-color: seagreen;
+    margin-left: 22px;
+    margin-top: 22px;
+    width: 270px;
+}
+
+.box1 {
+    height: 325px;
+}
+
+.box2 {
+    height: 254px;
+}
+
+
+.box3 {
+    height: 412px;
+}
+
+.box4 {
+    position: absolute;
+    right: 12.5px;
+    bottom: 93px;
+    height: 365px;   
+}
+
+.layout_2 footer {
+    width: 1000px;
+    z-index: 1;
+    bottom: 0px;
+    position: fixed;
+}
+
+
+
+.layout_3 nav {
+    height: 63px;
+    position: relative;
+}
+
+.layout_3 nav ul {
+    position: absolute;
+    display: flex;
+    left: 150px;
+}
+
+
+.layout_3 li {
+    width: 233px;
+    height: 41px;
+    display: block;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.layout_3 ul li:hover {
+    color:#80cc72;
+}
+
+.layout_3 main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.layout_3 article {
+    position: relative;
+    width: 333px;
+    height: 348px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.layout_3 section {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/plus.png");
+    left: 123px;
+    top: 130px;
+}
+
+
+
+@media (max-width:1000px) {
+    #wrapper , nav , header, footer  {
+        width: 666px;
+    }
+
+    .layout_3 nav ul {
+        left: 0px;
+    }
+
+    .layout_3 li {
+        width: 222px;
+    }
+  
+}
